@@ -1,30 +1,34 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="main">
+    <div class="Encabezado">
+      <h1>BIBLIOTECA PÚBLICA FILANDIA</h1>
+    </div>
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div> -->
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
+<script>
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+    background-color: #FADCD9;
+}
+.Encabezado {
+    background-color: #A49393;
+}
+.Cuerpo {
+    background-color: #E8B4B8;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
 }
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

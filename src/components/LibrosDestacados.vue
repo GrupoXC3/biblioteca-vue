@@ -1,0 +1,120 @@
+<template>
+  <div class="destacados">
+    <br>
+    <div id="centro">
+      <h2>Destacados</h2>
+    </div>
+
+    <div class="libros">
+      <div class="img">
+        <img src="Metamorfosis.jpg" />
+      </div>
+      <h2>
+        Titulo Lorem Ipsum 35
+      </h2>
+    </div>
+
+    <div class="libros">
+      <div class="img">
+        <img src="Metamorfosis.jpg" />
+      </div>
+      <h2>
+        Titulo Lorem Ipsum 26
+      </h2>
+
+    </div>
+    <div class="libros">
+      <div class="img">
+        <img src="Metamorfosis.jpg" />
+      </div>
+      <h2>
+        Titulo Lorem Ipsum 4
+      </h2>
+    </div>
+
+    <div class="libros">
+      <div class="img">
+        <img src="Metamorfosis.jpg" />
+      </div>
+      <h2>
+        Titulo Lorem Ipsum 30
+      </h2>
+    </div>
+
+    <div class="libros">
+      <div class="img">
+        <img src="Metamorfosis.jpg" />
+      </div>
+      <h2>
+        Titulo Lorem Ipsum 28
+      </h2>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+    name: 'LibrosDestacados'
+}
+</script>
+
+<style>
+.destacados {
+    text-align: center;
+    border-top: 50px auto;
+    /* height: 500px; */
+    background-color: #E8B4B8;
+    margin: 8px;
+}
+
+#centro {
+    background-color: white;
+    width: 400px;
+    margin-top: 8px auto;
+    margin: 0 auto;
+    padding: 8px;
+    border: 2px solid #E8B4B8;
+}
+
+.libros {
+    width: 250px;
+    height: 420px;
+    display: inline-block;
+    margin: 5px auto;
+    text-align: center;
+    background-color: white;
+    border: 10px solid white;
+    cursor: pointer;
+}
+
+.img {
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 2px solid #999;
+    padding: 13px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img img {
+    width: 100%;
+}
+
+.PiePagina {
+    background-color: #67595E;
+}
+
+@media screen and (max-width: 480px) {
+    #encabezado {
+        height: auto;
+    }
+    #cuerpo {
+        width: auto;
+    }
+    #libros {
+        display: none;
+    }
+}
+</style>
