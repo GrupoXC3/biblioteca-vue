@@ -4,14 +4,15 @@
     <div id="centro">
       <h2>Destacados</h2>
     </div>
-
     <div v-for="libro in librosDestacados" v-bind:key="libro.id" class="libros">
-      <div class="img">
-        <img v-bind:src="libro.imagen" />
-      </div>
-      <h2>
-        {{libro.titulo}}
-      </h2>
+      <router-link v-bind:to="`/libros/${libro.id}`">
+        <div class="img">
+          <img v-bind:src="libro.imagen" />
+        </div>
+        <h2>
+          {{libro.titulo}}
+        </h2>
+      </router-link>
     </div>
 
   </div>
@@ -24,7 +25,13 @@ export default {
   name: 'LibrosDestacados',
   data(){
     return {
-      librosDestacados: [],
+      librosDestacados: [
+        // {
+        //   id: 1,
+        //   imagen: 'https://via.placeholder.com/150',
+        //   titulo: 'Lorem improvisado'
+        // }
+      ],
     }
   },
   created(){
@@ -41,6 +48,11 @@ export default {
 </script>
 
 <style>
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .destacados {
     text-align: center;
     border-top: 50px auto;

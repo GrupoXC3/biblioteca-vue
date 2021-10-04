@@ -1,24 +1,21 @@
-# product-and-cart
+# Biblioteca en Vue
 
-## Project setup
+Repositorio con el codigo de la biblioteca de Finlandia en Vue
+
+Mintic 2022
+UTP
+Ciclo 3-E-4-82
+
+## Para descargar lo necesario
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Para lanzar la pagina
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
