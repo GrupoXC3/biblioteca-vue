@@ -14,51 +14,6 @@
       </h2>
     </div>
 
-    <!-- <div class="libros">
-      <div class="img">
-        <img src="Metamorfosis.jpg" />
-      </div>
-      <h2>
-        Titulo Lorem Ipsum 35
-      </h2>
-    </div>
-
-    <div class="libros">
-      <div class="img">
-        <img src="Metamorfosis.jpg" />
-      </div>
-      <h2>
-        Titulo Lorem Ipsum 26
-      </h2>
-
-    </div>
-    <div class="libros">
-      <div class="img">
-        <img src="Metamorfosis.jpg" />
-      </div>
-      <h2>
-        Titulo Lorem Ipsum 4
-      </h2>
-    </div>
-
-    <div class="libros">
-      <div class="img">
-        <img src="Metamorfosis.jpg" />
-      </div>
-      <h2>
-        Titulo Lorem Ipsum 30
-      </h2>
-    </div>
-
-    <div class="libros">
-      <div class="img">
-        <img src="Metamorfosis.jpg" />
-      </div>
-      <h2>
-        Titulo Lorem Ipsum 28
-      </h2>
-    </div> -->
-
   </div>
 </template>
 
