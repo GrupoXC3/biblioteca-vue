@@ -5,7 +5,16 @@
       <h2>Destacados</h2>
     </div>
 
-    <div class="libros">
+    <div v-for="libro in librosDestacados" v-bind:key="libro.id" class="libros">
+      <div class="img">
+        <img v-bind:src="libro.imagen" />
+      </div>
+      <h2>
+        {{libro.titulo}}
+      </h2>
+    </div>
+
+    <!-- <div class="libros">
       <div class="img">
         <img src="Metamorfosis.jpg" />
       </div>
@@ -48,14 +57,31 @@
       <h2>
         Titulo Lorem Ipsum 28
       </h2>
-    </div>
+    </div> -->
 
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-    name: 'LibrosDestacados'
+  name: 'LibrosDestacados',
+  data(){
+    return {
+      librosDestacados: [],
+    }
+  },
+  created(){
+    axios.get('https://basededatos-api.vercel.app/mas-destacados')
+      .then((response)=>{
+        console.log(response.data);
+        this.librosDestacados = response.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
 }
 </script>
 
