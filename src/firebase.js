@@ -18,6 +18,7 @@ const firebaseConfig = {
 };
 
 console.log(process.env);
+console.log(VUE_APP_DATABASE_URL);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
