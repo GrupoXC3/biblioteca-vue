@@ -7,14 +7,14 @@ import { getAuth, createUserWithEmailAndPassword, setPersistence, signInWithEmai
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAAe9sTBKnteMKoujVO47wyaHHoyF6g69w",
-  authDomain: "biblioteca-filandia.firebaseapp.com",
-  databaseURL: "https://biblioteca-filandia-default-rtdb.firebaseio.com",
-  projectId: "biblioteca-filandia",
-  storageBucket: "biblioteca-filandia.appspot.com",
-  messagingSenderId: "844976667413",
-  appId: "1:844976667413:web:c87c58f0f82647d625c71c",
-  measurementId: "G-SW7K1B0PVY"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 // Initialize Firebase
