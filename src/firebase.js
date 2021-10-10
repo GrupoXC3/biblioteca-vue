@@ -17,7 +17,10 @@ const firebaseConfig = {
   // measurementId: VUE_APP_measurementId
 };
 
-console.log(databaseURL);
+console.log(apiKey);
+console.log(apiKey);
+console.log(apiKey);
+console.log(apiKey);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
