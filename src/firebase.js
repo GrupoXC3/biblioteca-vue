@@ -7,18 +7,15 @@ import { getAuth, createUserWithEmailAndPassword, setPersistence, signInWithEmai
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // apiKey: VUE_APP_apiKey,
-  // authDomain: VUE_APP_authDomain,
-  // databaseURL: VUE_APP_databaseURL,
-  // projectId: VUE_APP_projectId,
-  // storageBucket: VUE_APP_storageBucket,
-  // messagingSenderId: VUE_APP_messagingSenderId,
-  // appId: VUE_APP_appId,
-  // measurementId: VUE_APP_measurementId
+  // apiKey: process.env.VUE_APP_API_KEY,
+  // authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+  // databaseURL: process.env.VUE_APP_DATABASE_URL,
+  // projectId: process.env.VUE_APP_PROJECT_ID,
+  // storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+  // messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
+  // appId: process.env.VUE_APP_APP_ID,
+  // measurementId: process.env.VUE_APP_MEASUREMENT_ID
 };
-
-console.log(process.env);
-console.log(VUE_APP_DATABASE_URL);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
