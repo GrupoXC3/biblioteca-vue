@@ -7,7 +7,7 @@
     <div v-for="libro in librosDestacados" v-bind:key="libro.id" class="libros">
       <router-link v-bind:to="`/libros/${libro.id}`">
         <div class="img">
-          <img v-bind:src="libro.imagen" />
+          <img v-bind:src="libro.imagen"/>
         </div>
         <h2>
           {{libro.titulo}}
@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 a{
   text-decoration: none;
   color: black;
@@ -63,22 +63,31 @@ a{
 
 #centro {
     background-color: white;
-    width: 400px;
-    margin-top: 8px auto;
-    margin: 0 auto;
+    margin: auto;
     padding: 8px;
     border: 2px solid #E8B4B8;
+    width: 200px;
+}
+
+#centro h2{
+  margin: 0
 }
 
 .libros {
     width: 250px;
-    height: 420px;
     display: inline-block;
     margin: 5px auto;
     text-align: center;
     background-color: white;
     border: 10px solid white;
     cursor: pointer;
+
+}
+
+.libros h2{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .img {
@@ -93,6 +102,7 @@ a{
 
 .img img {
     width: 100%;
+    height: 360px;
 }
 
 .PiePagina {

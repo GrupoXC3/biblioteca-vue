@@ -1,8 +1,5 @@
 <template>
   <div id="main">
-    <div class="Encabezado">
-      <h1>BIBLIOTECA PÚBLICA FILANDIA</h1>
-    </div>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -10,25 +7,25 @@
     <router-view/>
   </div>
 </template>
-
 <script>
 
+export default{
+  name: 'App'
+}
 </script>
 
 <style>
 body {
-    background-color: #FADCD9;
+  background-color: #FADCD9;
+
 }
-.Encabezado {
-    background-color: #A49393;
+
+#main{
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
 .Cuerpo {
     background-color: #E8B4B8;
 }
-h1 {
-    text-align: center;
-    font-size: 50px;
-}
-
-
 </style>
