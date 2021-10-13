@@ -1,4 +1,7 @@
 <template>
+    <router-link class="inicio" to="/">
+    Inicio
+    </router-link>
     <section class="form">
         <h4>Registro de usuario</h4>
         <div class="grupo2">
@@ -42,7 +45,6 @@ export default {
                     displayName: this.nombre,
                     photoURL: "https://example.com/jane-q-user/profile.jpg"
                 });
-                console.log(this.user);
                 alert('Registro con exito: ' + this.user.displayName + ", tu sesion se ha iniciado");
                 this.$router.push({path: '/'});
 
@@ -63,6 +65,16 @@ export default {
 </script>
 
 <style scoped>
+
+.inicio{
+  font-weight: bold;
+  font-size: 16;
+  border: 1px black solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
 h1 {
     text-align: center;
     font-weight: 700;

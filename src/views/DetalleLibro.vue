@@ -1,4 +1,7 @@
 <template>
+    <router-link class="inicio" to="/">
+      Inicio
+    </router-link>
   <Encabezado />
   <div id="detalle-libro" v-cloak>
     <div id="imagen-libro">
@@ -64,10 +67,8 @@ export default {
   },
 
   mounted(){
-    console.log('Montado!');
     axios.get(`https://basededatos-api.vercel.app/libros/${this.$route.params.id}`)
       .then((response)=>{
-        console.log(response.data);
         this.libro = response.data;
       })
       .catch((error) => {
@@ -78,6 +79,15 @@ export default {
 </script>
 
 <style scoped>
+.inicio{
+  font-weight: bold;
+  font-size: 16;
+  border: 1px black solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
 [v-cloak]{
   display:none;
 }

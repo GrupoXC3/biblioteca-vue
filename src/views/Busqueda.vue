@@ -1,4 +1,8 @@
 <template>
+    <router-link class="inicio" to="/">
+        Inicio
+    </router-link>
+
     <Encabezado/>
     <BarraDeBusqueda />
 
@@ -65,10 +69,8 @@
             BarraDeBusqueda
         },
         mounted(){
-            console.log(this.$route.query.categoria);
             axios.get(`https://basededatos-api.vercel.app/libros/?categoria=${this.$route.query.categoria}`)
             .then((response)=>{
-                console.log(response.data);
                 this.libros_filtrados = response.data;
             })
             .catch((error) => {
@@ -80,6 +82,16 @@
 </script>
 
 <style>
+
+.inicio{
+    font-weight: bold;
+    font-size: 16;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 8px 15px;
+}
+
     a{
         color: black;
         text-decoration: none;

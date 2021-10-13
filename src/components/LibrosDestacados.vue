@@ -37,7 +37,6 @@ export default {
   created(){
     axios.get('https://basededatos-api.vercel.app/mas-destacados')
       .then((response)=>{
-        console.log(response.data);
         this.librosDestacados = response.data;
       })
       .catch((error) => {

@@ -1,4 +1,7 @@
 <template>
+  <router-link class="inicio" to="/">
+    Inicio
+  </router-link>
   <div class="home">
     <div v-if="user == null">
       <BotonesUsuario/>
@@ -38,7 +41,6 @@ export default {
     async deslogearse(){
       try{
         await logout(auth);
-        console.log(this.user);
         alert("Has cerrado sesion");
         this.user = null;
       }catch(error){
@@ -52,14 +54,21 @@ export default {
     LibrosDestacados,
     Encabezado,
     BotonesUsuario
-  },
-  mounted(){
-    console.log(this.user);
   }
 }
 </script>
 
 <style scoped>
+.inicio{
+  font-weight: bold;
+  font-size: 16;
+  border: 1px black solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
+
 #sesion-iniciada{
     display: flex;
     justify-content:right;
